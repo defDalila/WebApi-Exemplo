@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:WebApi.Controllers.ContatoController.Create(WebApi.Entities.Contato)">
+            <summary>
+            Cria um novo contato
+            </summary>
+            <param name="contato">dados do contato</param>
+            <returns>201 Created com o contato criado</returns>
+        </member>
+        <member name="M:WebApi.Controllers.ContatoController.Read(System.Int32)">
+            <summary>
+            Retorna um contato pelo seu id
+            </summary>
+            <param name="id">id do contato</param>
+            <returns>contato caso encontrado, NotFound() caso n o encontrado</returns>
+        </member>
+        <member name="M:WebApi.Controllers.ContatoController.Update(System.Int32,WebApi.Entities.Contato)">
+            <summary>
+            Atualiza um contato
+            </summary>
+            <param name="id">id do contato</param>
+            <param name="contato">dados do contato a ser atualizado</param>
+            <returns>Not Found() caso n o encontrado, Ok() caso encontrado</returns>
+        </member>
+        <member name="M:WebApi.Controllers.ContatoController.Delete(System.Int32)">
+            <summary>
+            Remove um contato
+            </summary>
+            <param name="id">id do contato</param>
+            <returns>NotFound() caso n o encontrado, Ok() caso encontrado</returns>
+        </member>
+        <member name="T:WebApi.Migrations.CriaTabelasPlanner">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.CriaTabelasPlanner.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.CriaTabelasPlanner.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.CriaTabelasPlanner.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

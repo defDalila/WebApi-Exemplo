@@ -8,7 +8,7 @@
 
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <DocumentationFile>../description.xml</DocumentationFile>
+    <DocumentationFile>description.xml</DocumentationFile>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <TargetFramework>net8.0</TargetFramework>
     <PublishSelfContained>true</PublishSelfContained>
