@@ -21,17 +21,18 @@ public class ContatoController : ControllerBase
         _context = context;
     }
     
+
     /// <summary>
-    /// Cria um contato
+    /// Cria um novo contato
     /// </summary>
-    /// <param name="contato"></param>
-    /// <returns> </returns>
+    /// <param name="contato">dados do contato</param>
+    /// <returns>201 Created com o contato criado</returns>
     [HttpPost]
     public IActionResult Create(Contato contato)
     {
         _context.Add(contato);
         _context.SaveChanges();
-        return Ok(null);
+        return CreatedAtAction(nameof(Read), new {id = contato.Id}, contato);
     }
     
     /// <summary>
