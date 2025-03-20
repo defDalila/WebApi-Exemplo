@@ -21,6 +21,11 @@ public class ContatoController : ControllerBase
         _context = context;
     }
     
+    /// <summary>
+    /// Cria um contato
+    /// </summary>
+    /// <param name="contato"></param>
+    /// <returns> </returns>
     [HttpPost]
     public IActionResult Create(Contato contato)
     {
